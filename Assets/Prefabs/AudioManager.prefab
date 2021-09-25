@@ -104,3 +104,15 @@ MonoBehaviour:
     pitch: 0.4
     loop: 0
     source: {fileID: 0}
+  - name: SlotWin
+    clip: {fileID: 8300000, guid: 4d10316b575d2c54cb50bec91ad58632, type: 3}
+    volume: 0.7
+    pitch: 0.4
+    loop: 0
+    source: {fileID: 0}
+  - name: SlotJackpot
+    clip: {fileID: 8300000, guid: 3620e0998038bf749a903ce8bce68f6b, type: 3}
+    volume: 0.7
+    pitch: 0.4
+    loop: 0
+    source: {fileID: 0}
