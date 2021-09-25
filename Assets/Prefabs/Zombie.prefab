@@ -118,13 +118,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   enemyHealth: 1
-<<<<<<< HEAD
-  deathTime: 2
-=======
   zombieAttackSound: ZombieAttack
   zombieDeathSound: ZombiePop
   deathTime: 1.5
->>>>>>> 85106565a2c5b24a380237732ed0b98b3c6e43ed
 --- !u!61 &-6493166021453362505
 BoxCollider2D:
   m_ObjectHideFlags: 0
