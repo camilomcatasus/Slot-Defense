@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-   public GameObject[] enemy;
+    public GameObject[] enemy;
 
     public Transform[] spawnSpots;
 
     private float timeBtwSpawns;
     public float startTimeBtwSpawns;
-    
 
-    void Start(){
+
+    void Start()
+    {
         timeBtwSpawns = startTimeBtwSpawns;
     }
-    
 
-    void Update(){
 
-        if(timeBtwSpawns <= 0){
+    void Update()
+    {
+
+        if (timeBtwSpawns <= 0)
+        {
 
             int randPos = Random.Range(0, spawnSpots.Length);
 
