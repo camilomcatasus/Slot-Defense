@@ -8,6 +8,8 @@ public class Zombie : MonoBehaviour
     private Transform moneyPos;
     private Money money;
     public int enemyHealth;
+    public string zombieAttackSound;
+    public string zombieDeathSound;
 
     private Animator anim;
 
@@ -15,11 +17,14 @@ public class Zombie : MonoBehaviour
 
     public float deathTime;
 
+    AudioManager sounds;
+
 
 
 
     void Start()
     {
+        sounds = FindObjectOfType<AudioManager>();
         dead = false;
         money = GameObject.FindGameObjectWithTag("Money").GetComponent<Money>();
         moneyPos = GameObject.FindGameObjectWithTag("Money").GetComponent<Transform>();
@@ -47,6 +52,7 @@ public class Zombie : MonoBehaviour
     {
         speed = 0;
         anim.SetTrigger("Death_Trigger");
+        sounds.Play(zombieDeathSound);
         dead = true;
 
     }
@@ -58,6 +64,7 @@ public class Zombie : MonoBehaviour
     {
         if (other.CompareTag("Money"))
         {
+            sounds.Play(zombieAttackSound);
             Destroy(gameObject);
             money.down(1);
         }

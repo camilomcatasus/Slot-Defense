@@ -54,7 +54,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: dd97374cbdaee234d9b967d479df53aa, type: 3}
     volume: 1
     pitch: 0.4
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: ZombieGroan
     clip: {fileID: 8300000, guid: 7147ce8b9a4f86d40afee798646d4961, type: 3}
