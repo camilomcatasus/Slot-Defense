@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   enemyHealth: 1
+  animator: {fileID: 6664791070372279288}
 --- !u!61 &-6493166021453362505
 BoxCollider2D:
   m_ObjectHideFlags: 0

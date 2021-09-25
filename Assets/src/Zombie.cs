@@ -9,6 +9,8 @@ public class Zombie : MonoBehaviour
     private Money money;
     public int enemyHealth;
 
+    public Animator animator;
+
 
 
 
@@ -30,7 +32,8 @@ public class Zombie : MonoBehaviour
 
             if (hit)
             {
-                Destroy(gameObject);
+                animator.SetTrigger("Death_Trigger");
+                speed = 0;
             }
         }
     }
