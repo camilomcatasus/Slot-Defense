@@ -98,3 +98,9 @@ MonoBehaviour:
     pitch: 0.4
     loop: 1
     source: {fileID: 0}
+  - name: SlotSlam
+    clip: {fileID: 8300000, guid: 3c55f6a3324fa56489c71294fef2019a, type: 3}
+    volume: 0.7
+    pitch: 0.4
+    loop: 0
+    source: {fileID: 0}
