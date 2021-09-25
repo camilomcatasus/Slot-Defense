@@ -43,4 +43,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96c065ef10a92445b8e543f24985cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: SlotMachine
+    clip: {fileID: 8300000, guid: c1e37310c7f6d2241bd5bfc0864509ab, type: 3}
+    volume: 1
+    pitch: 0.4
+    loop: 1
+    source: {fileID: 0}
+  - name: ZombiePop
+    clip: {fileID: 8300000, guid: dd97374cbdaee234d9b967d479df53aa, type: 3}
+    volume: 1
+    pitch: 0.4
+    loop: 1
+    source: {fileID: 0}
+  - name: ZombieGroan
+    clip: {fileID: 8300000, guid: 7147ce8b9a4f86d40afee798646d4961, type: 3}
+    volume: 0.7
+    pitch: 0.4
+    loop: 0
+    source: {fileID: 0}
+  - name: ZombieAttack
+    clip: {fileID: 8300000, guid: f148690241202ee49885155ebc7c231a, type: 3}
+    volume: 0.7
+    pitch: 0.4
+    loop: 0
+    source: {fileID: 0}
