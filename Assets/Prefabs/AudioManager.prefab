@@ -62,3 +62,9 @@ MonoBehaviour:
     pitch: 0.4
     loop: 0
     source: {fileID: 0}
+  - name: ZombieAttack
+    clip: {fileID: 8300000, guid: f148690241202ee49885155ebc7c231a, type: 3}
+    volume: 0.7
+    pitch: 0.4
+    loop: 0
+    source: {fileID: 0}
