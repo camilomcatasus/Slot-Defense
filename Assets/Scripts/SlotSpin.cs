@@ -120,25 +120,25 @@ public class SlotSpin : MonoBehaviour
 
     public void LockOnSlot()
     {
-        if (transform.position.y >= 6.35f) // pumpkin
+        if (transform.position.y >= 6.35f - 0.75f) // pumpkin
         {
             slotSpeed = -1;
             theSlot = "pumpkin";
             sounds.Play(SlotStopSound);
         }
-        else if (transform.position.y >= 4.85f && transform.position.y <= 4.95f) // mouth
+        else if (transform.position.y >= 4.85f - 0.75f && transform.position.y <= 4.95f - 0.75f) // mouth
         {
             slotSpeed = -1;
             theSlot = "mouth";
             sounds.Play(SlotStopSound);
         }
-        else if (transform.position.y >= 3.35f && transform.position.y <= 3.45f) // ghost
+        else if (transform.position.y >= 3.35f - 0.75f && transform.position.y <= 3.45f - 0.75f) // ghost
         {
             slotSpeed = -1;
             theSlot = "ghost";
             sounds.Play(SlotStopSound);
         }
-        else if (transform.position.y >= 1.85f && transform.position.y <= 1.95f) // cc
+        else if (transform.position.y >= 1.85f - 0.75f && transform.position.y <= 1.95f - 0.75f) // cc
         {
             slotSpeed = -1;
             theSlot = "cc";
@@ -155,9 +155,9 @@ public class SlotSpin : MonoBehaviour
             timeBWMovement = maxTimeBWMovement;
         }
 
-        if (transform.position.y >= 6.4f)
+        if (transform.position.y >= 6.4f - 0.75f)
         {
-            transform.position = new Vector2(transform.position.x, 0.5f);
+            transform.position = new Vector2(transform.position.x, 0.5f - 0.75f);
         }
 
         if (timeToSlowDown <= 0)
