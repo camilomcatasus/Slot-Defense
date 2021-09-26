@@ -1388,12 +1388,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7001414601445236001, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001414601445236001, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001414601445236001, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -6.34
+      value: -3.1699982
       objectReference: {fileID: 0}
     - target: {fileID: 7001414601445236001, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -787.19
+      value: 85.65997
       objectReference: {fileID: 0}
     - target: {fileID: 7001414601445236001, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1401,7 +1409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001414601445236001, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 380.55
+      value: -55.950012
       objectReference: {fileID: 0}
     - target: {fileID: 7001414601445236002, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_Color.a
@@ -1449,7 +1457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001414602161074153, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -77
+      value: -55.950012
       objectReference: {fileID: 0}
     - target: {fileID: 7001414602161074154, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_Text
@@ -2022,6 +2030,10 @@ PrefabInstance:
       propertyPath: bet
       value: 
       objectReference: {fileID: 1379156888}
+    - target: {fileID: 7416189052613822133, guid: 937bea36c641a284aaf343fcabaf6ae0, type: 3}
+      propertyPath: slotMachine
+      value: 
+      objectReference: {fileID: 6437935785324890452}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 937bea36c641a284aaf343fcabaf6ae0, type: 3}
 --- !u!1 &820857663
@@ -3791,6 +3803,7 @@ MonoBehaviour:
   timeToSlowDown: 0.52206606
   slotSpeed: -1
   theSlot: mouth
+  SlotStopSound: 
 --- !u!212 &1708305407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4146,6 +4159,7 @@ MonoBehaviour:
   timeToSlowDown: 0.6564179
   slotSpeed: -1
   theSlot: pumpkin
+  SlotStopSound: 
 --- !u!212 &1805355244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5008,6 +5022,7 @@ MonoBehaviour:
   timeToSlowDown: 1.9723086
   slotSpeed: -1
   theSlot: cc
+  SlotStopSound: 
 --- !u!212 &2082671191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5368,6 +5383,8 @@ MonoBehaviour:
   slot1Delay: 2
   slot2Delay: 4
   slot3Delay: 6
+  slotSpinSound: 
+  slotPlaySound: 
   spawner: {fileID: 326326275}
 --- !u!1 &6437935785324890453
 GameObject:
