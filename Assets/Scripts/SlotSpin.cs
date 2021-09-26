@@ -8,15 +8,25 @@ public class SlotSpin : MonoBehaviour
     private float timeInterval;
     public bool slotSelected;
     public string slotValue;
+    public float delayToSlowDown;
+    public float maxTimeBWMovement;
+    public float minTimeToSlowDown;
+    public float maxTimeToSlowDown;
+    public float timeToSlowDown;
+    float timeBWMovement;
+    float slotSpeed = 4;
+    public string theSlot;
 
     // Start is called before the first frame update
     void Start()
     {
+        //timeToSlowDown = Random.Range(minTimeToSlowDown, maxTimeToSlowDown);
         slotSelected = true;
         slotValue = "";
-        StartCoroutine("Rotate");
+        // StartCoroutine("Rotate");
     }
 
+    /*
     private IEnumerator Rotate()
     {
         slotSelected = false;
@@ -60,14 +70,96 @@ public class SlotSpin : MonoBehaviour
             if (i > Mathf.RoundToInt(randomValue * 0.95f))
                 timeInterval = 0.20f;
 
+            Debug.Log("I'm here");
             yield return new WaitForSeconds(timeInterval);
         }
 
+    }
+    */
+
+    public void Spin(float delayToSlow)
+    {
+        delayToSlowDown = delayToSlow;
+        slotSpeed = 4;
+    }
+
+    public void MoveDown()
+    {
+        if (slotSpeed == 4)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y + 0.75f);
+        }
+        else if (slotSpeed == 3)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y + 0.375f);
+        }
+        else if (slotSpeed == 2)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y + 0.1875f);
+        }
+        else if (slotSpeed == 1)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y + 0.09375f);
+        }
+        else if (slotSpeed == 0)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y + 0.09375f);
+            LockOnSlot();
+        }
+        else
+        {
+
+        }
+    }
+
+    public void LockOnSlot()
+    {
+        if (transform.position.y >= 6.35f) // pumpkin
+        {
+            slotSpeed = -1;
+            theSlot = "pumpkin";
+        }
+        else if (transform.position.y >= 4.85f && transform.position.y <= 4.95f) // mouth
+        {
+            slotSpeed = -1;
+            theSlot = "mouth";
+        }
+        else if (transform.position.y >= 3.35f && transform.position.y <= 3.45f) // ghost
+        {
+            slotSpeed = -1;
+            theSlot = "ghost";
+        }
+        else if (transform.position.y >= 1.85f && transform.position.y <= 1.95f) // cc
+        {
+            slotSpeed = -1;
+            theSlot = "cc";
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (timeBWMovement <=0 )
+        {
+            MoveDown();
+            timeBWMovement = maxTimeBWMovement;
+        }
+
+        if (transform.position.y >= 6.4f)
+        {
+            transform.position = new Vector2(transform.position.x, 0.5f);
+        }
+
+        if (timeToSlowDown <= 0)
+        {
+            timeToSlowDown = Random.Range(minTimeToSlowDown, maxTimeToSlowDown);
+            if (slotSpeed >= 0)
+            {
+                slotSpeed--;
+            }
+        }
+
+        timeBWMovement -= Time.deltaTime;
+        timeToSlowDown -= Time.deltaTime;
     }
 }
