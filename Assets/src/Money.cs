@@ -7,7 +7,7 @@ public class Money : MonoBehaviour
 {
     public float amount;
     public Text bet;
-
+    public SlotMachine slotMachine;
     private float betAmount;
     void Start()
     {
@@ -18,13 +18,14 @@ public class Money : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bet.text = "Amount " + (float)betAmount;
+        
 
     }
 
 
     public void down(float reduce)
     {
-        betAmount = betAmount - reduce;
+        slotMachine.value -= reduce;
+        slotMachine.UpdateWallet();
     }
 }

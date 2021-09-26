@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SlotMachine : MonoBehaviour
 {
+    public float value = 100f;
+    public int cost = 5;
+    public Text display;
     // has three slots
     public SlotSpin s1;
     public SlotSpin s2;
@@ -30,17 +34,22 @@ public class SlotMachine : MonoBehaviour
         if (s1.theSlot.Equals(s2.theSlot) || s2.theSlot.Equals(s3.theSlot) || s3.theSlot.Equals(s1.theSlot))
         {
             Debug.Log("You should have earned some money.");
+            value += cost * 5;
             if (s1.theSlot.Equals(s2.theSlot) && s2.theSlot.Equals(s3.theSlot))
             {
+                value += cost * 100;
                 Debug.Log("You hit the jackpot!!!");
             }
         }
-
+        UpdateWallet();
         spawner.SetActive(false);
     }
 
     public void SpinSlots()
     {
+
+        value -= cost;
+        UpdateWallet();
         spawner.SetActive(true);
         checkedSlots = false;
         Debug.Log(s1.slotSpeed);
@@ -53,7 +62,10 @@ public class SlotMachine : MonoBehaviour
             s3.Spin(6);
         }
     }
-
+    public void UpdateWallet()
+    {
+        display.text = "$$-" + value.ToString() + "-$$";
+    }    
     // Update is called once per frame
     void Update()
     {
