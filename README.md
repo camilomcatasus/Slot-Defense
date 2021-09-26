@@ -7,8 +7,10 @@ Modular Features | Swap in / out features (e.g. gamble, high/low, bonuses, frees
 
 Deployable on web, iOS, Android. Bonus if it can be deployed on another platform of your choice
 
-## Folders
-The assets folder is the most important one, it contains all our animations, code, and sprites
+## About
+This is a slot machine game that was made in Unity
+
+Unity Version: 2020.3.16.f1
 
 ## Team
 Camilo Catasus

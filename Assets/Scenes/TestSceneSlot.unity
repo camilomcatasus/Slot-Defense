@@ -3803,7 +3803,7 @@ MonoBehaviour:
   timeToSlowDown: 0.52206606
   slotSpeed: -1
   theSlot: mouth
-  SlotStopSound: 
+  SlotStopSound: SlotSlam
 --- !u!212 &1708305407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4159,7 +4159,7 @@ MonoBehaviour:
   timeToSlowDown: 0.6564179
   slotSpeed: -1
   theSlot: pumpkin
-  SlotStopSound: 
+  SlotStopSound: SlotSlam
 --- !u!212 &1805355244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5022,7 +5022,7 @@ MonoBehaviour:
   timeToSlowDown: 1.9723086
   slotSpeed: -1
   theSlot: cc
-  SlotStopSound: 
+  SlotStopSound: SlotSlam
 --- !u!212 &2082671191
 SpriteRenderer:
   m_ObjectHideFlags: 0
