@@ -51,7 +51,7 @@ public class SlotMachine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!checkedSlots && 1.slotSpeed < 0 && s2.slotSpeed < 0 && s3.slotSpeed < 0)
+        if (!checkedSlots && s1.slotSpeed < 0 && s2.slotSpeed < 0 && s3.slotSpeed < 0)
         {
             CheckSlots();
         }
