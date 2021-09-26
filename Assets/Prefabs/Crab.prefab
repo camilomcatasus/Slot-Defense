@@ -145,6 +145,6 @@ MonoBehaviour:
   speed: 5
   enemyHealth: 1
   zombieAttackSound: 
-  zombieDeathSound: 
+  zombieDeathSound: ZombiePop
   deathTime: 0.75
   deathEffect: {fileID: 6523548971007429053, guid: ae7a3682ed64fa945b0fbc632e760b8c, type: 3}
