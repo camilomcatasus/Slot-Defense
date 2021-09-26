@@ -19,14 +19,13 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         timeBtwSpawns = startTimeBtwSpawns;
-        timeleft = 7;
     }
 
 
     void Update()
     {
 
-        if (timeBtwSpawns <= 0 && timeleft >= 0)
+        if (timeBtwSpawns <= 0)
         {
 
             int randPos = Random.Range(0, spawnSpots.Length);
