@@ -18,7 +18,7 @@ public class Money : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bet.text = "Amount " + betAmount;
+        bet.text = "Amount " + (float)betAmount;
 
     }
 
