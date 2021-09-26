@@ -40,6 +40,7 @@ public class SlotMachine : MonoBehaviour
 
     public void SpinSlots()
     {
+        spawner.SetActive(true);
         checkedSlots = false;
         Debug.Log(s1.slotSpeed);
         Debug.Log(s2.slotSpeed);
