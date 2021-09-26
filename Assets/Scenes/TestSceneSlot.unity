@@ -1295,7 +1295,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001414602161074153, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -439
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001414602161074154, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001414602161074154, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001414602161074154, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7001414602404118661, guid: afd8e1499cf5b6542a52d0abf3f7b797, type: 3}
       propertyPath: m_Camera
@@ -3936,7 +3948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791835123}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.72, y: -0.06, z: 56}
+  m_LocalPosition: {x: -0.72, y: -0.06, z: 100}
   m_LocalScale: {x: 0.38523003, y: 0.38523003, z: 1.2841}
   m_Children: []
   m_Father: {fileID: 0}
