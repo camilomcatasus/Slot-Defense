@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    public Spawner spawner;
     public string music;
-
+   // public int index = 0;
     AudioManager sounds;
 
     public List<Sprite> backgrounds;
@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     }
     public void SwitchSetting(int index)
     {
+        //this.index = index;
+        spawner.enemy[0] = enemy[index];
         background.GetComponent<SpriteRenderer>().sprite = backgrounds[index];
     }    
 
