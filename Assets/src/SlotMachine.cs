@@ -13,9 +13,13 @@ public class SlotMachine : MonoBehaviour
     public float slot2Delay;
     public float slot3Delay;
 
+<<<<<<< HEAD
     public GameObject spawner;
 
 
+=======
+    bool checkedSlots = true;
+>>>>>>> 0055af19675a8611dc03149a119bd32c1639e8e8
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +45,7 @@ public class SlotMachine : MonoBehaviour
 
     public void SpinSlots()
     {
-        spawner.SetActive(true);
-
+        checkedSlots = false;
         Debug.Log(s1.slotSpeed);
         Debug.Log(s2.slotSpeed);
         Debug.Log(s3.slotSpeed);
@@ -57,7 +60,7 @@ public class SlotMachine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (s1.theSlot != "" && s2.theSlot != "" && s3.theSlot != "")
+        if (!checkedSlots && s1.slotSpeed < 0 && s2.slotSpeed < 0 && s3.slotSpeed < 0)
         {
             CheckSlots();
         }
