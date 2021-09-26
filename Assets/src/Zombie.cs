@@ -59,6 +59,10 @@ public class Zombie : MonoBehaviour
         dead = true;
 
     }
+    public void RealDeath()
+    {
+        Destroy(gameObject);
+    }
 
 
 
