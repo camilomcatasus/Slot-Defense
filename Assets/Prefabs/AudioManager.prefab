@@ -47,72 +47,72 @@ MonoBehaviour:
   - name: SlotMachine
     clip: {fileID: 8300000, guid: c1e37310c7f6d2241bd5bfc0864509ab, type: 3}
     volume: 1
-    pitch: 0.4
+    pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: ZombiePop
     clip: {fileID: 8300000, guid: dd97374cbdaee234d9b967d479df53aa, type: 3}
     volume: 1
-    pitch: 0.4
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: ZombieGroan
     clip: {fileID: 8300000, guid: 7147ce8b9a4f86d40afee798646d4961, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: ZombieAttack
     clip: {fileID: 8300000, guid: f148690241202ee49885155ebc7c231a, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: SlotClick
     clip: {fileID: 8300000, guid: 0130fc1dd99058645b748723418134bd, type: 3}
     volume: 0.7
-    pitch: 0.4
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: CoinCollect
     clip: {fileID: 8300000, guid: 45ee22cb169de0643b0e5533d393d24e, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: CoinDrop
     clip: {fileID: 8300000, guid: 2cfd40d10da0ffa46bc968ff86413c54, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: CoinSlotting
     clip: {fileID: 8300000, guid: a15abbdaa37572d4ea933f0453c81f64, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: MusicHalloween
     clip: {fileID: 8300000, guid: fa6ce2be14442c44cba1a28f78c4d47d, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: SlotSlam
     clip: {fileID: 8300000, guid: 3c55f6a3324fa56489c71294fef2019a, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: SlotWin
     clip: {fileID: 8300000, guid: 4d10316b575d2c54cb50bec91ad58632, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: SlotJackpot
     clip: {fileID: 8300000, guid: 3620e0998038bf749a903ce8bce68f6b, type: 3}
-    volume: 0.7
-    pitch: 0.4
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
