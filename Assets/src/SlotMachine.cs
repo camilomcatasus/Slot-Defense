@@ -13,11 +13,17 @@ public class SlotMachine : MonoBehaviour
     public float slot2Delay;
     public float slot3Delay;
 
+    public string slotSpinSound;
+    public string slotPlaySound;
+
     public GameObject spawner;
     bool checkedSlots = true;
+
+    AudioManager sounds;
     // Start is called before the first frame update
     void Start()
     {
+        sounds = FindObjectOfType<AudioManager>();
         s1.timeToSlowDown = slot1Delay;
         s2.timeToSlowDown = slot2Delay;
         s3.timeToSlowDown = slot3Delay;
@@ -48,6 +54,8 @@ public class SlotMachine : MonoBehaviour
         Debug.Log(s3.slotSpeed);
         if (s1.slotSpeed < 0 && s2.slotSpeed < 0 && s3.slotSpeed < 0)
         {
+            sounds.Play(slotSpinSound);
+            sounds.Play(slotPlaySound);
             s1.Spin(2);
             s2.Spin(4);
             s3.Spin(6);
@@ -59,6 +67,7 @@ public class SlotMachine : MonoBehaviour
     {
         if (!checkedSlots && s1.slotSpeed < 0 && s2.slotSpeed < 0 && s3.slotSpeed < 0)
         {
+            sounds.Stop(slotPlaySound);
             CheckSlots();
         }
     }

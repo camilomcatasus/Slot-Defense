@@ -17,9 +17,14 @@ public class SlotSpin : MonoBehaviour
     public float slotSpeed = -1;
     public string theSlot;
 
+    public string SlotStopSound;
+
+    AudioManager sounds;
+
     // Start is called before the first frame update
     void Start()
     {
+        sounds = FindObjectOfType<AudioManager>();
         //timeToSlowDown = Random.Range(minTimeToSlowDown, maxTimeToSlowDown);
         slotSelected = true;
         slotValue = "";
@@ -119,21 +124,25 @@ public class SlotSpin : MonoBehaviour
         {
             slotSpeed = -1;
             theSlot = "pumpkin";
+            sounds.Play(SlotStopSound);
         }
         else if (transform.position.y >= 4.85f && transform.position.y <= 4.95f) // mouth
         {
             slotSpeed = -1;
             theSlot = "mouth";
+            sounds.Play(SlotStopSound);
         }
         else if (transform.position.y >= 3.35f && transform.position.y <= 3.45f) // ghost
         {
             slotSpeed = -1;
             theSlot = "ghost";
+            sounds.Play(SlotStopSound);
         }
         else if (transform.position.y >= 1.85f && transform.position.y <= 1.95f) // cc
         {
             slotSpeed = -1;
             theSlot = "cc";
+            sounds.Play(SlotStopSound);
         }
     }
 
