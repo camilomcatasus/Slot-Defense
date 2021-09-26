@@ -1782,7 +1782,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686471648
 GameObject:
@@ -1876,7 +1876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7416189052613822129, guid: 937bea36c641a284aaf343fcabaf6ae0, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7416189052613822129, guid: 937bea36c641a284aaf343fcabaf6ae0, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1953,6 +1953,10 @@ PrefabInstance:
     - target: {fileID: 7416189052613822132, guid: 937bea36c641a284aaf343fcabaf6ae0, type: 3}
       propertyPath: m_Name
       value: Money
+      objectReference: {fileID: 0}
+    - target: {fileID: 7416189052613822132, guid: 937bea36c641a284aaf343fcabaf6ae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7416189052613822133, guid: 937bea36c641a284aaf343fcabaf6ae0, type: 3}
       propertyPath: bet
@@ -4736,7 +4740,7 @@ PrefabInstance:
       objectReference: {fileID: 492100223}
     - target: {fileID: 7963381469342575511, guid: d83190b4749126c4fb041d9d284aa1c6, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7963381469342575511, guid: d83190b4749126c4fb041d9d284aa1c6, type: 3}
       propertyPath: m_LocalScale.z
@@ -5281,7 +5285,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6437935785324890452
 MonoBehaviour:
