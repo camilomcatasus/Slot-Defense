@@ -12,8 +12,11 @@ This is a slot machine game that was made in Unity
 
 Unity Version: 2020.3.16.f1
 
+[Web Slot Machine](https://unkownfire.itch.io/slot-defense)
+
 ## Team
-Camilo Catasus
-Carlos Amasifuen
-Jorge Leon
-Karanveer Sandhu
+Camilo Catasus <br/>
+Carlos Amasifuen <br/>
+Jorge Leon <br/>
+Karanveer Sandhu <br/>
+
