@@ -14,7 +14,7 @@ public class SlotSpin : MonoBehaviour
     public float maxTimeToSlowDown;
     public float timeToSlowDown;
     float timeBWMovement;
-    float slotSpeed = 4;
+    public float slotSpeed = 4;
     public string theSlot;
 
     // Start is called before the first frame update
@@ -79,8 +79,9 @@ public class SlotSpin : MonoBehaviour
 
     public void Spin(float delayToSlow)
     {
-        delayToSlowDown = delayToSlow;
-        slotSpeed = 4;
+           delayToSlowDown = delayToSlow;
+           slotSpeed = 4;
+        
     }
 
     public void MoveDown()

@@ -74,7 +74,7 @@ public class Zombie : MonoBehaviour
             anim.SetTrigger("Attack_Trigger");
             speed = 2;
             sounds.Play(zombieAttackSound);
-            money.down(1);
+            money.down(money.amount * (float)0.02);
             dead = false;
         }
     }
