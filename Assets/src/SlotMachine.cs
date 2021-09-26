@@ -19,6 +19,8 @@ public class SlotMachine : MonoBehaviour
 
     public string slotSpinSound;
     public string slotPlaySound;
+    public string winSound;
+    public string jackPotSound;
 
     public GameObject spawner;
     bool checkedSlots = true;
@@ -40,10 +42,12 @@ public class SlotMachine : MonoBehaviour
         if (s1.theSlot.Equals(s2.theSlot) || s2.theSlot.Equals(s3.theSlot) || s3.theSlot.Equals(s1.theSlot))
         {
             Debug.Log("You should have earned some money.");
+            sounds.Play(winSound);
             value += cost * 5;
             if (s1.theSlot.Equals(s2.theSlot) && s2.theSlot.Equals(s3.theSlot))
             {
                 value += cost * 100;
+                sounds.Play(jackPotSound);
                 Debug.Log("You hit the jackpot!!!");
             }
         }
