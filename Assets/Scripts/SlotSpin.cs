@@ -14,7 +14,7 @@ public class SlotSpin : MonoBehaviour
     public float maxTimeToSlowDown;
     public float timeToSlowDown;
     float timeBWMovement;
-    public float slotSpeed = 4;
+    public float slotSpeed = -1;
     public string theSlot;
 
     // Start is called before the first frame update

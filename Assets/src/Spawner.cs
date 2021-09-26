@@ -11,17 +11,20 @@ public class Spawner : MonoBehaviour
     private float timeBtwSpawns;
     public float startTimeBtwSpawns;
 
+    private float timeleft;
+
 
     void Start()
     {
         timeBtwSpawns = startTimeBtwSpawns;
+        timeleft = 7;
     }
 
 
     void Update()
     {
 
-        if (timeBtwSpawns <= 0)
+        if (timeBtwSpawns <= 0 && timeleft >= 0)
         {
 
             int randPos = Random.Range(0, spawnSpots.Length);
@@ -36,6 +39,8 @@ public class Spawner : MonoBehaviour
         else
         {
             timeBtwSpawns -= Time.deltaTime;
+            timeleft -= Time.deltaTime;
+
         }
     }
 }
