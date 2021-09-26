@@ -9,3 +9,9 @@ Deployable on web, iOS, Android. Bonus if it can be deployed on another platform
 
 ## Folders
 The assets folder is the most important one, it contains all our animations, code, and sprites
+
+## Team
+Camilo Catasus
+Carlos
+Jorge Leon
+Karanveer Sandhu
