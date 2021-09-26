@@ -52,9 +52,14 @@ public class Zombie : MonoBehaviour
     {
         speed = 0;
         anim.SetTrigger("Death_Trigger");
-        sounds.Play(zombieDeathSound);
+        //sounds.Play(zombieDeathSound);
+        
         dead = true;
 
+    }
+    public void RealDeath()
+    {
+        Destroy(gameObject);
     }
 
 
@@ -64,8 +69,8 @@ public class Zombie : MonoBehaviour
     {
         if (other.CompareTag("Money"))
         {
-            sounds.Play(zombieAttackSound);
-            Destroy(gameObject);
+            //sounds.Play(zombieAttackSound);
+            anim.SetTrigger("Attack_Trigger");
             money.down(1);
         }
     }

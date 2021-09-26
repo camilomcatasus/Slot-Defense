@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame updat
 
-    private Zombie zombie;
+    private Zombie zombie ;
 
     // Update is called once per frame
     void Update()
