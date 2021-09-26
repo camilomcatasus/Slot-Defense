@@ -34,6 +34,19 @@ public class SlotMachine : MonoBehaviour
         }
     }
 
+    public void SpinSlots()
+    {
+        Debug.Log(s1.slotSpeed);
+        Debug.Log(s2.slotSpeed);
+        Debug.Log(s3.slotSpeed);
+        if (s1.slotSpeed < 0 && s2.slotSpeed < 0 && s3.slotSpeed < 0)
+        {
+            s1.Spin(2);
+            s2.Spin(4);
+            s3.Spin(6);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
