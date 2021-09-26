@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public Spawner spawner;
     public string music;
+    public List<GameObject> cols;
    // public int index = 0;
     AudioManager sounds;
 
@@ -24,6 +25,10 @@ public class GameManager : MonoBehaviour
     public void SwitchSetting(int index)
     {
         //this.index = index;
+        foreach(GameObject gameObject in cols)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = slots[index];
+        }
         spawner.enemy[0] = enemy[index];
         background.GetComponent<SpriteRenderer>().sprite = backgrounds[index];
     }    

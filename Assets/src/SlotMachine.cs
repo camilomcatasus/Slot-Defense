@@ -72,7 +72,7 @@ public class SlotMachine : MonoBehaviour
     }
     public void UpdateWallet()
     {
-        display.text = "$$-" + value.ToString() + "-$$";
+        display.text = "$$-" + value.ToString("n1") + "-$$";
     }    
     // Update is called once per frame
     void Update()
