@@ -36,7 +36,10 @@ public class SlotMachine : MonoBehaviour
 
     public void SpinSlots()
     {
-        if(s1.slotSpeed < 0 && s2.slotSpeed < 0 && s3.slotSpeed < 0)
+        Debug.Log(s1.slotSpeed);
+        Debug.Log(s2.slotSpeed);
+        Debug.Log(s3.slotSpeed);
+        if (s1.slotSpeed < 0 && s2.slotSpeed < 0 && s3.slotSpeed < 0)
         {
             s1.Spin(2);
             s2.Spin(4);
