@@ -5383,8 +5383,8 @@ MonoBehaviour:
   slot1Delay: 2
   slot2Delay: 4
   slot3Delay: 6
-  slotSpinSound: 
-  slotPlaySound: 
+  slotSpinSound: SlotClick
+  slotPlaySound: SlotMachine
   spawner: {fileID: 326326275}
 --- !u!1 &6437935785324890453
 GameObject:
