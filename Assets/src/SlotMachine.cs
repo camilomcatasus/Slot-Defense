@@ -26,6 +26,7 @@ public class SlotMachine : MonoBehaviour
 
     void CheckSlots()
     {
+        checkedSlots = true;
         if (s1.theSlot.Equals(s2.theSlot) || s2.theSlot.Equals(s3.theSlot) || s3.theSlot.Equals(s1.theSlot))
         {
             Debug.Log("You should have earned some money.");
