@@ -116,11 +116,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d41758942b4f449a376d3c4e354143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 2
   enemyHealth: 1
   zombieAttackSound: ZombieAttack
   zombieDeathSound: ZombiePop
-  deathTime: 1.5
+  deathTime: 0.75
+  deathEffect: {fileID: 6523548971007429053, guid: ae7a3682ed64fa945b0fbc632e760b8c, type: 3}
 --- !u!61 &-6493166021453362505
 BoxCollider2D:
   m_ObjectHideFlags: 0

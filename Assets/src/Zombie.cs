@@ -19,6 +19,8 @@ public class Zombie : MonoBehaviour
 
     AudioManager sounds;
 
+    public GameObject deathEffect;
+
 
 
 
@@ -53,8 +55,13 @@ public class Zombie : MonoBehaviour
         speed = 0;
         anim.SetTrigger("Death_Trigger");
         sounds.Play(zombieDeathSound);
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
         dead = true;
 
+    }
+    public void RealDeath()
+    {
+        Destroy(gameObject);
     }
 
 
@@ -64,9 +71,11 @@ public class Zombie : MonoBehaviour
     {
         if (other.CompareTag("Money"))
         {
+            anim.SetTrigger("Attack_Trigger");
+            speed = 2;
             sounds.Play(zombieAttackSound);
-            Destroy(gameObject);
             money.down(1);
+            dead = false;
         }
     }
 
