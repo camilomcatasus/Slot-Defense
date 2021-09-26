@@ -13,6 +13,8 @@ public class Spawner : MonoBehaviour
 
     private float timeleft;
 
+    private bool start;
+
 
     void Start()
     {
