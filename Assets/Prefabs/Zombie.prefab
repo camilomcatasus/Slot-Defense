@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d41758942b4f449a376d3c4e354143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   enemyHealth: 1
   zombieAttackSound: ZombieAttack
   zombieDeathSound: ZombiePop
