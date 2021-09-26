@@ -9,6 +9,9 @@ Deployable on web, iOS, Android. Bonus if it can be deployed on another platform
 
 ## About
 This is a slot machine game that was made in Unity
+APK for Android:
+The apk for Android is in the gitHub repo and it is called build2.apk.
+Just place that in your phone by connecting your phone to the computer and copy the apk file on your phone. Run apk file from your Android phone
 
 Unity Version: 2020.3.16.f1
 
